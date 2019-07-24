@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pods-demo
+spec:
+  containers:
+  - name: pods-demo
+    image: ubuntu
+    command: ['sh', '-c', 'while true; do echo hi; sleep 10; done']
+
